@@ -33,6 +33,7 @@ end
 
 group :production do
   gem 'pg', '~> 0.18.1'
+  gem 'rails_12factor'
 end
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
