@@ -16,8 +16,11 @@
 /tmp
 
 
-*
+
 !.keep
 !*/
 
 .DS_Store
+
+tmp/
+test/

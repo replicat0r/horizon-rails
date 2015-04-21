@@ -12,4 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require js/modernizr.custom.js
+
+//= require js/scripts.js
+//= require js/googleMapInit.js
+//= require js/tweetie.js
+
+//= require js/custom.js
+//= require js/okvideo.min.js
+ 

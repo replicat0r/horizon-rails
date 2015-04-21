@@ -2,13 +2,20 @@
 <html>
 <head>
   <title>HorizonRails</title>
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+          <script src="https://maps.googleapis.com/maps/api/js"></script>
+
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application"%>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body id="bigWrapper" data-spy="scroll" data-target=".navbar-default" data-offset="100">
 
+<%= render 'shared/header' %>
 <%= yield %>
 
 </body>
+
+	<%= yield :page_js %>
+
 </html>

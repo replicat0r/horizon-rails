@@ -1,0 +1,674 @@
+ <% content_for :page_js do %>
+
+
+        <% javascript_include_tag "js/preloader.js" %>
+            <% javascript_include_tag "js/overlay.js" %>
+
+     <script type="text/javascript">
+        $(function () {
+            "use strict";
+
+            //if mobile device, replace video background with background image (video background is restricted on mobile devices)
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $.backstretch('img/background1.jpg');
+            } else {
+                $.okvideo({
+                    source: 'https://vimeo.com/89247310', // enter here the url of your vimeo or youtube video
+                    autoplay: true,
+                    loop: true,
+                    highdef: true,
+                    hd: true,
+                    adproof: true,
+                    volume: 0 // video volume value from 0 (mute) to 100
+                })
+            }
+        });
+    </script>
+
+     </script>
+ <% end %>
+
+ <div class="container overlay overlay-hugeinc">
+
+        <div class="row">
+
+            <div class="overlay-section">
+                <!--overlay content-->
+            </div>
+
+            <div class="col-md-12 ">
+                <a class="overlay-close">
+                    <br>
+                    <br>
+
+                    <i class="icon-close"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section id="intro">
+        <div class="black-overlay"></div>
+        <div class="container valign">
+            <div class="row">
+
+                <div class="col-md-offset-2 col-md-8 text-center">
+
+                    <h2 class="minimal"><small>Providing a</small> personal<small> and</small> uniquely majestic
+                           <br><small> to the</small> Stratosphere!</h2>
+                </div>
+            </div>
+
+
+            <div class="verticallineSeparator center-block"></div>
+
+            <div class="row">
+                <div class="col-md-offset-4 col-md-4 introSmallCaption minimal-style text-center">
+                    <h5 class="minimal"><small>Reaching the</small> Horizon</h5>
+                    <p class="minimal">
+                    </p>
+                    <a data-scroll href="index-minimal-video.html#aboutIntro" class="btn btn-default btn-white">
+                            More
+                        </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="text-separator">
+        <div class="container-fluid">
+
+
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6 text-center">
+                    <h3 data-scroll-reveal="enter left move 10px over 1s after 0.2s" class="minimal">
+                            <small>Reaching The</small> Horizon
+                        </h3>
+
+
+                    <h4 data-scroll-reveal="enter left move 10px over 1s after 0.3s">
+                           Horizon helps facilitate an exceptional approach to celebrate the life of a loved one through a personal and majestic journey to the Stratosphere. A service that truly reflects the uniqueness of the life it honors by having your loved one cremated ashes dispersed in space.
+                        </h4>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <section id="aboutContent">
+        <div class="container">
+            <!--content-->
+
+
+
+            <div class="row">
+                <div class="col-md-8" data-scroll-reveal="enter left move over 1s after 0.2s">
+                    <h4 class="minimal"><small>The Experience</small></h4>
+                    <div class="lineSeparator"></div>
+                    <p>Horizon helps facilitate an exceptional approach to celebrate the life of a loved one through a personal and majestic journey to the Stratosphere. A service that truly reflects the uniqueness of the life it honors by having your loved one cremated ashes dispersed in space.</p>
+                    <p>
+
+                        Prior to the launch a personalized memorial service will be held where friends and family can get together to celebrate their loved once life. Together they can watch the launch and journey of their loved ones final resting place live.
+
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h6>A stratosphere memorial service includes:</h6>
+                    <hr>
+                    <ul>
+
+                        <li>Personalize memorial service prior to launch</li>
+                        <li>Launch into the stratosphere.</li>
+                        <li>Release of ashes into the stratosphere.</li>
+                        <li>A DVD and digital copy of launch day events, including ascension of the aircraft the service and flight and release of ashes.</li>
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+            <!--
+
+                <div class="row content">
+
+                    <div class="aboutItem col-md-4 col-sm-12 col-xs-12 clearfix" data-scroll-reveal="enter left move 5px over 1s after 0.2s">
+                        <div class="aboutIconWrapper" data-stellar-ratio="0.90" data-stellar-vertical-offset="300">
+                            <img src="img/diamondIcon.png" class="img-responsive" alt="icon">
+                        </div>
+                        <div class="aboutText">
+                            <h5 class="minimal">Flexible</h5>
+                            <div class="aboutSeparator"></div>
+                            <p>
+                                Design at uneasy me season of branch on praise esteem. Abilities discourse believing consisted remaining to no.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="aboutItem col-md-4 col-sm-12 col-xs-12 clearfix" data-scroll-reveal="enter right move 5px over 1s after 0.4s">
+                        <div class="aboutIconWrapper" data-stellar-ratio="1.1" data-stellar-vertical-offset="300">
+                            <img src="img/analyticsIcon.png" class="img-responsive" alt="icon">
+                        </div>
+                        <div class="aboutText">
+                            <h5 class="minimal">Retina <small>Ready</small></h5>
+                            <div class="aboutSeparator"></div>
+                            <p>
+                                He share of first to worse. Weddings and any opinions suitable smallest nay. My he houses or months settle remove ladies appear.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="aboutItem col-md-4 col-sm-12 col-xs-12 clearfix" data-scroll-reveal="enter right move 5px over 1s after 0.4s">
+                        <div class="aboutIconWrapper" data-stellar-ratio="1.2" data-stellar-vertical-offset="300">
+                            <i class="fa fa-magic aboutIcon" ></i>
+                        </div>
+                        <div class="aboutText">
+                            <h5 class="minimal">Font Awesome <small>Icons</small></h5>
+                            <div class="aboutSeparator"></div>
+                            <p>
+                                He share of first to worse. Weddings and any opinions suitable smallest nay. My he houses or months settle remove ladies appear.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+-->
+
+            <!--end content-->
+        </div>
+    </section>
+
+
+    <section id="process" data-stellar-background-ratio="0.1">
+        <div class="black-overlay"></div>
+        <div class="container">
+
+            <div class="row sectionIntro">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h1 class="minimal">The Process</h1>
+
+                    <!--<img src="img/incline-white.png" class="inclineLine center-block" alt="incline">-->
+                    <h5 class="minimal"><small>Lauch Steps</small></h5>
+                    <div class="verticallineSeparator center-block"></div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="tabs tabs-style-iconfall">
+                        <nav>
+                            <ul>
+                                <li><a href="index-minimal-video.html#section-iconfall-1" class="icon icon-pencil"><span>Step 1</span></a>
+                                </li>
+                                <li><a href="index-minimal-video.html#section-iconfall-2" class="icon icon-grid"><span>Step 2</span></a>
+                                </li>
+                                <li><a href="index-minimal-video.html#section-iconfall-3" class="icon icon-chemistry"><span>Step 3</span></a>
+                                </li>
+                                <li><a href="index-minimal-video.html#section-iconfall-4" class="icon icon-magic-wand"><span>Step 4</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="content-wrap">
+                            <section id="section-iconfall-1">
+                                <p class="minimal">
+                                    Decide on type of personalized service
+                                </p>
+                            </section>
+                            <section id="section-iconfall-2">
+                                <p class="minimal">
+                                    Provide Cremated Ash Sample
+                                </p>
+                            </section>
+                            <section id="section-iconfall-3">
+                                <p class="minimal">
+                                    Launch into the Stratosphere
+                                </p>
+                            </section>
+                            <section id="section-iconfall-4">
+                                <p class="minimal">
+                                    Follow the Journey Live
+                                </p>
+                            </section>
+                        </div>
+                        <!-- /content -->
+                    </div>
+                    <!-- /tabs -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="servicesIntro">
+
+        <div class="container">
+
+
+            <div class="parallaxIcon serviceParallax" data-stellar-ratio="0.1" data-stellar-vertical-offset="-100">
+                <img class="img-responsive" src="img/parallaxServices.png" alt="icon">
+            </div>
+
+            <!--header-->
+            <div class="row sectionIntro">
+                <div class="col-md-8 col-md-offset-2 text-center" data-scroll-reveal="enter top move 10px over 1s after 0.2s">
+                    <h1 class="minimal">The Technology</h1>
+
+                    <!--<img src="img/incline-white.png" class="inclineLine center-block" alt="incline">-->
+                    <h5 class="minimal"><small>How does Horizon work?</small></h5>
+                    <div class="verticallineSeparator center-block"></div>
+                    <!--<img src="img/zigzagsep.png" class="img-responsive center-block zigzagSep" alt="separator">-->
+
+                </div>
+            </div>
+            <!--end header-->
+
+
+        </div>
+
+    </section>
+
+
+    <section id="servicesContent">
+
+        <div class="container-fluid">
+            <div class="serviceBox text-center">
+                <div class="valign">
+                    <div class="serviceIcon-wrap serviceIcon-effect-1 serviceIcon-effect-1a" data-scroll-reveal="enter left move 10px over 1s after 0.2s">
+                        <div class="serviceIcon">
+                            <img src="img/toolsIcon.png" class="img-responsive" alt="icon">
+                        </div>
+                    </div>
+
+
+
+                    <h5 class="minimal" data-scroll-reveal="enter left move 10px over 1s after 0.4s">Tracking <small>&</small> Communication  </h5>
+
+                    <p data-scroll-reveal="enter left move 10px over 1s after 0.6s">
+                        The heart of the tracking subsystem is a device called the trackuino. It is an arduino shield that combines a low power radio transmitter with a GPS receiver. Once the GPS receiver obtains a location signal, packets of data are transmitted through a quarter wave plane antenna to receiving stations
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="serviceBox text-center">
+                <div class="valign">
+                    <div class="serviceIcon-wrap serviceIcon-effect-1 serviceIcon-effect-1a" data-scroll-reveal="enter right move 10px over 1s after 0.2s">
+                        <div class="serviceIcon">
+                            <img src="img/cinemaIcon.png" class="img-responsive" alt="icon">
+                        </div>
+                    </div>
+
+                    <h5 class="minimal" data-scroll-reveal="enter right move 10px over 1s after 0.4s">Atmospheric Balloon <small>&</small> Structure </h5>
+
+                    <p data-scroll-reveal="enter right move 10px over 1s after 0.6s">
+                        The payload is launched with a150 g Helium filled Aether balloon that’s lands with a glider parachute. The payload is kept insulated and protected from the temperature variations by using an insulating foam structure housing all electrical and mechanical components.
+                    </p>
+                </div>
+            </div>
+
+            <div class="serviceBox text-center">
+                <div class="valign">
+                    <div class="serviceIcon-wrap serviceIcon-effect-1 serviceIcon-effect-1a" data-scroll-reveal="enter left move 10px over 1s after 0.2s">
+                        <div class="serviceIcon">
+                            <img src="img/touchIcon.png" class="img-responsive" alt="icon">
+                        </div>
+                    </div>
+
+                    <h5 class="minimal" data-scroll-reveal="enter left move 10px over 1s after 0.4s">Guidance <small>&</small> Navigation</h5>
+
+                    <p data-scroll-reveal="enter left move 10px over 1s after 0.6s">
+                        The payload is launched with a150 g Helium filled Aether balloon that’s lands with a glider parachute. The payload is kept insulated and protected from the temperature variations by using an insulating foam structure housing all electrical and mechanical components.
+                    </p>
+                </div>
+            </div>
+
+            <div class="serviceBox text-center">
+                <div class="valign">
+                    <div class="serviceIcon-wrap serviceIcon-effect-1 serviceIcon-effect-1a" data-scroll-reveal="enter right move 10px over 1s after 0.2s">
+                        <div class="serviceIcon">
+                            <i class="fa fa-lightbulb-o"></i>
+                            <!--here is used a font awesome icon instead of a icon image -->
+                        </div>
+                    </div>
+
+                    <h5 class="minimal" data-scroll-reveal="enter right move 10px over 1s after 0.4s">Proof of Concept</h5>
+
+                    <p data-scroll-reveal="enter right move 10px over 1s after 0.6s">
+                        The payload is launched with a150 g Helium filled Aether balloon that’s lands with a glider parachute. The payload is kept insulated and protected from the temperature variations by using an insulating foam structure housing all electrical and mechanical components.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="aboutIntro">
+
+        <div class="container">
+
+            <div class="parallaxIcon aboutParallax" data-stellar-ratio="0.1" data-stellar-vertical-offset="-100">
+                <img class="img-responsive" src="assets/image/parallax.png" alt="icon">
+            </div>
+
+            <!--header-->
+            <div class="row sectionIntro">
+                <div class="col-md-8 col-md-offset-2 text-center" data-scroll-reveal="enter top move 10px over 1s after 0.2s">
+                    <h1 class="minimal">The Team</h1>
+
+                    <!--<img src="img/incline-white.png" class="inclineLine center-block" alt="incline">-->
+                    <h5 class="minimal"><small>Let's get to know each other</small></h5>
+                    <div class="verticallineSeparator center-block"></div>
+                    <!--<img src="img/zigzagsep.png" class="img-responsive center-block zigzagSep" alt="separator">-->
+
+                </div>
+            </div>
+            <!--end header-->
+
+
+        </div>
+
+    </section>
+
+    <section id="team">
+
+        <div class="container">
+
+
+
+
+            <!--content-->
+            <div class="row content">
+
+                <div class="owl-carousel" id="owl-team">
+
+                    <!--member-->
+                    <div class="teamMember">
+
+                        <div class="col-md-6 col-sm-6 col-xs-12 teamImageWrapper">
+                            <div class="team-image">
+                                <img src="img/team/2.png" class="center-block img-responsive team-imagetocenter" alt="Team Image">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12 memberDescription text-center">
+
+                            <!--<div class="lineSeparator center-block"></div>-->
+                            <h3 data-scroll-reveal="enter right move 10px over 1s after 0.2s" class="minimal">
+                                    Shenalie Fernando
+                                </h3>
+                            <h4 class="position minimal" data-scroll-reveal="enter right move 10px over 1s after 0.4s">
+                                         <small>CTO</small>
+                                </h4>
+
+                            <p class="memberParagraph" data-scroll-reveal="enter right move 10px over 1s after 0.6s">
+                                Leader, traveller and visionary working towards a Space Engineering Undergraduate Degree.
+
+                            </p>
+
+
+                            <div class="allIconsSocialWrapper center-block">
+
+                                <!--icon-->
+                                <div class="socialWrapper">
+                                    <div class="socialIcon-wrap socialIcon-effect-1 socialIcon-effect-1a">
+                                        <div class="socialIcon">
+                                            <a href="index-minimal-video.html#"><i class="fa fa-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end icon-->
+
+                                <!--icon-->
+                                <div class="socialWrapper">
+                                    <div class="socialIcon-wrap socialIcon-effect-1 socialIcon-effect-1a">
+                                        <div class="socialIcon">
+                                            <a href="index-minimal-video.html#"><i class="fa fa-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end icon-->
+
+                                <!--icon-->
+
+                                <!--end icon-->
+
+                            </div>
+
+                            <div class="clearfix"></div>
+
+
+                            <!--<img src="img/zigzagsep.png" class="img-responsive center-block zigzagSep" alt="separator">-->
+
+
+                        </div>
+                    </div>
+
+                    <div class="teamMember">
+
+                        <div class="col-md-6 col-sm-6 col-xs-12 teamImageWrapper">
+                            <div class="team-image">
+                                <img src="img/team/2.png" class="center-block img-responsive team-imagetocenter" alt="Team Image">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12 memberDescription text-center">
+
+                            <!--<div class="lineSeparator center-block"></div>-->
+                            <h3 class="minimal" data-scroll-reveal="enter right move 10px over 1s after 0.2s">
+                                    Patrick Hazzard
+                                </h3>
+                            <h4 class="position minimal" data-scroll-reveal="enter right move 10px over 1s after 0.4s">
+                                    <small>CEO</small>
+                                </h4>
+
+                            <p class="memberParagraph" data-scroll-reveal="enter right move 10px over 1s after 0.6s">
+                                Leader, traveller and visionary working towards a Space Engineering Undergraduate Degree.
+
+                            </p>
+
+
+                            <div class="allIconsSocialWrapper center-block">
+
+                                <!--icon-->
+                                <div class="socialWrapper">
+                                    <div class="socialIcon-wrap socialIcon-effect-1 socialIcon-effect-1a">
+                                        <div class="socialIcon">
+                                            <a href="index-minimal-video.html#"><i class="fa fa-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end icon-->
+
+                                <!--icon-->
+                                <div class="socialWrapper">
+                                    <div class="socialIcon-wrap socialIcon-effect-1 socialIcon-effect-1a">
+                                        <div class="socialIcon">
+                                            <a href="index-minimal-video.html#"><i class="fa fa-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end icon-->
+
+                                <!--icon-->
+
+                                <!--end icon-->
+
+                            </div>
+
+                            <div class="clearfix"></div>
+
+
+                            <!--<img src="img/zigzagsep.png" class="img-responsive center-block zigzagSep" alt="separator">-->
+
+
+                        </div>
+                    </div>
+                    <!--end member-->
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+    <section id="contactIntro">
+
+        <div class="container">
+
+
+            <div class="parallaxIcon contactParallax" data-stellar-ratio="0.1" data-stellar-vertical-offset="0">
+                <img class="img-responsive" src="img/parallaxContact.png" alt="icon">
+            </div>
+
+
+            <!--header-->
+            <div class="row sectionIntro">
+
+
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h1 class="minimal"><span data-scroll-reveal="enter left move 10px over 1s after 0.2s">Contact</span></h1>
+
+                    <!--<img src="img/incline-white.png" class="inclineLine center-block" alt="incline">-->
+                    <h5 class="minimal"><small>Get in touch with us!</small></h5>
+                    <div class="verticallineSeparator center-block"></div>
+                    <br>
+
+                    <!--<img src="img/zigzagsep.png" class="img-responsive center-block zigzagSep" alt="separator">-->
+
+                </div>
+            </div>
+            <!--end header-->
+
+
+        </div>
+
+    </section>
+
+
+    <section id="contactContent">
+        <div class="container">
+
+
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12 contactInfo1">
+                    <i class="icon-pointer"></i>
+                    <p>4700 Keele Street
+                        <br> Toronto, Ontario</p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 contactInfo1">
+                    <i class="icon-call-end"></i>
+                    <p>416-274-1842
+                        <br> 416-274-1842
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12 contactInfo1">
+                    <i class="icon-envelope"></i>
+                    <p>ReachingTheHorizon@mail.com
+                        <br>
+                    </p>
+                </div>
+
+
+            </div>
+
+            <img src="img/zigzagsep.png" class="img-responsive center-block zigzagSep" alt="separator">
+            <br>
+            <br>
+            <!--content-->
+            <div class="row">
+
+
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center" data-scroll-reveal="enter left move over 1s after 0.2s">
+
+                    <div id="result"></div>
+
+                    <div class="row">
+                        <form method="post" action="contact.php" name="contactform" id="contactform">
+
+                            <fieldset id="contact_form">
+                                <div class="col-md-6">
+                                    <label for="name">
+                                        <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                                    </label>
+
+                                    <label for="email">
+                                        <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                                    </label>
+
+                                    <label for="phone">
+                                        <input type="text" name="phone" id="phone" placeholder="Phone Number">
+                                    </label>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="comments">
+                                        <textarea name="comments" id="comments" placeholder="Enter Your Message"></textarea>
+                                    </label>
+
+                                </div>
+                                <input type="submit" class="submit btn btn-default btn-black" id="submit" value="Submit">
+
+                            </fieldset>
+
+                        </form>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <!--/* END contact SECTION */-->
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+    <section id="googleMapWrapper">
+        <section id="googleMap"></section>
+    </section>
+
+
+    <section id="footer" class="dark">
+
+
+
+        <div class="bottomLine text-center">
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-6 text-left">
+                        <p>
+                            <br> All Rights Reserved.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
