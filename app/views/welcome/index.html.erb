@@ -1,8 +1,12 @@
  <% content_for :page_js do %>
 
+         <%= javascript_include_tag "js/scripts.js" %>
+        <%= javascript_include_tag "js/preloader.js" %>
+        <%= javascript_include_tag "js/googleMapInit.js" %>
 
-        <% javascript_include_tag "js/preloader.js" %>
-            <% javascript_include_tag "js/overlay.js" %>
+                <%= javascript_include_tag "js/custom.js" %>
+        <%= javascript_include_tag "js/okvideo.min.js" %>
+
 
      <script type="text/javascript">
         $(function () {
@@ -25,7 +29,6 @@
         });
     </script>
 
-     </script>
  <% end %>
 
  <div class="container overlay overlay-hugeinc">
