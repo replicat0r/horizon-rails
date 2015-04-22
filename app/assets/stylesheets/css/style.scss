@@ -1432,7 +1432,7 @@ h3 small, h4 small, h5 small{
 /*process*/
 
 #process{
-    background: url("img/pattern.jpg");
+    background-image: url(image_path("pattern.jpg"));
     background-attachment: fixed;
 }
 

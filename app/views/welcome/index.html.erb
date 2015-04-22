@@ -11,10 +11,10 @@
      <script type="text/javascript">
         $(function () {
             "use strict";
-
+            //
             //if mobile device, replace video background with background image (video background is restricted on mobile devices)
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                $.backstretch('img/background1.jpg');
+                $.backstretch("<%= asset_path('pattern.jpg') %>");
             } else {
                 $.okvideo({
                     source: 'https://vimeo.com/89247310', // enter here the url of your vimeo or youtube video
@@ -57,8 +57,8 @@
 
                 <div class="col-md-offset-2 col-md-8 text-center">
 
-                    <h2 class="minimal"><small>Providing a</small> personal<small> and</small> uniquely majestic
-                           <br><small> to the</small> Stratosphere!</h2>
+                    <h2 class="minimal"><small>Providing a</small> personal<small> and</small> uniquely majestic 
+                           <br><small>journey to the</small> Stratosphere!</h2>
                 </div>
             </div>
 
@@ -89,7 +89,7 @@
                         </h3>
 
 
-                    <h4 data-scroll-reveal="enter left move 10px over 1s after 0.3s">
+                    <h4 data-scroll-reveal="enter left move 10px over 1s after 0.3s" style="color:#888;font-weight: 300;">
                            Horizon helps facilitate an exceptional approach to celebrate the life of a loved one through a personal and majestic journey to the Stratosphere. A service that truly reflects the uniqueness of the life it honors by having your loved one cremated ashes dispersed in space.
                         </h4>
                 </div>
@@ -256,7 +256,7 @@
 
 
             <div class="parallaxIcon serviceParallax" data-stellar-ratio="0.1" data-stellar-vertical-offset="-100">
-                <img class="img-responsive" src="img/parallaxServices.png" alt="icon">
+            <%= image_tag("parallaxServices.png" , class: "img-responsive") %>
             </div>
 
             <!--header-->
@@ -286,7 +286,7 @@
                 <div class="valign">
                     <div class="serviceIcon-wrap serviceIcon-effect-1 serviceIcon-effect-1a" data-scroll-reveal="enter left move 10px over 1s after 0.2s">
                         <div class="serviceIcon">
-                            <img src="img/toolsIcon.png" class="img-responsive" alt="icon">
+                           <i class="fa fa-wifi"></i>
                         </div>
                     </div>
 
@@ -305,7 +305,7 @@
                 <div class="valign">
                     <div class="serviceIcon-wrap serviceIcon-effect-1 serviceIcon-effect-1a" data-scroll-reveal="enter right move 10px over 1s after 0.2s">
                         <div class="serviceIcon">
-                            <img src="img/cinemaIcon.png" class="img-responsive" alt="icon">
+                            <i class="fa fa-rocket"></i>
                         </div>
                     </div>
 
@@ -321,8 +321,7 @@
                 <div class="valign">
                     <div class="serviceIcon-wrap serviceIcon-effect-1 serviceIcon-effect-1a" data-scroll-reveal="enter left move 10px over 1s after 0.2s">
                         <div class="serviceIcon">
-                            <img src="img/touchIcon.png" class="img-responsive" alt="icon">
-                        </div>
+<i class="fa fa-compass"></i>                        </div>
                     </div>
 
                     <h5 class="minimal" data-scroll-reveal="enter left move 10px over 1s after 0.4s">Guidance <small>&</small> Navigation</h5>
@@ -360,7 +359,7 @@
         <div class="container">
 
             <div class="parallaxIcon aboutParallax" data-stellar-ratio="0.1" data-stellar-vertical-offset="-100">
-                <img class="img-responsive" src="assets/image/parallax.png" alt="icon">
+            <%= image_tag("parallax.png" ,class: "img-responsive") %>
             </div>
 
             <!--header-->
@@ -399,7 +398,8 @@
 
                         <div class="col-md-6 col-sm-6 col-xs-12 teamImageWrapper">
                             <div class="team-image">
-                                <img src="img/team/2.png" class="center-block img-responsive team-imagetocenter" alt="Team Image">
+
+                                <%= image_tag("team/2.png",class: "center-block col-sm-12 team-imagetocenter") %>
                             </div>
                         </div>
 
@@ -422,20 +422,14 @@
                             <div class="allIconsSocialWrapper center-block">
 
                                 <!--icon-->
-                                <div class="socialWrapper">
-                                    <div class="socialIcon-wrap socialIcon-effect-1 socialIcon-effect-1a">
-                                        <div class="socialIcon">
-                                            <a href="index-minimal-video.html#"><i class="fa fa-facebook"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
+                              
                                 <!--end icon-->
 
                                 <!--icon-->
                                 <div class="socialWrapper">
                                     <div class="socialIcon-wrap socialIcon-effect-1 socialIcon-effect-1a">
                                         <div class="socialIcon">
-                                            <a href="index-minimal-video.html#"><i class="fa fa-twitter"></i></a>
+                                            <a href="https://ca.linkedin.com/pub/shenalie-fernando/81/49/4b8"><i class="fa fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -460,7 +454,7 @@
 
                         <div class="col-md-6 col-sm-6 col-xs-12 teamImageWrapper">
                             <div class="team-image">
-                                <img src="img/team/2.png" class="center-block img-responsive team-imagetocenter" alt="Team Image">
+                                <%= image_tag("team/1.jpg",class: "center-block img-responsive team-imagetocenter") %>
                             </div>
                         </div>
 
@@ -483,20 +477,14 @@
                             <div class="allIconsSocialWrapper center-block">
 
                                 <!--icon-->
-                                <div class="socialWrapper">
-                                    <div class="socialIcon-wrap socialIcon-effect-1 socialIcon-effect-1a">
-                                        <div class="socialIcon">
-                                            <a href="index-minimal-video.html#"><i class="fa fa-facebook"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 <!--end icon-->
 
                                 <!--icon-->
                                 <div class="socialWrapper">
                                     <div class="socialIcon-wrap socialIcon-effect-1 socialIcon-effect-1a">
                                         <div class="socialIcon">
-                                            <a href="index-minimal-video.html#"><i class="fa fa-twitter"></i></a>
+                                            <a href="https://ca.linkedin.com/pub/patrick-hazzard/67/295/b58"><i class="fa fa-linkedin"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -535,7 +523,7 @@
 
 
             <div class="parallaxIcon contactParallax" data-stellar-ratio="0.1" data-stellar-vertical-offset="0">
-                <img class="img-responsive" src="img/parallaxContact.png" alt="icon">
+            <%= image_tag("parallaxContact.png",class: "img-responsive") %>
             </div>
 
 
@@ -571,20 +559,20 @@
             <br>
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-12 contactInfo1">
-                    <i class="icon-pointer"></i>
+                    <i class="fa fa-map-marker"></i>
                     <p>4700 Keele Street
                         <br> Toronto, Ontario</p>
                 </div>
 
                 <div class="col-md-4 col-sm-6 col-xs-12 contactInfo1">
-                    <i class="icon-call-end"></i>
+                    <i class="fa fa-phone"></i>
                     <p>416-274-1842
                         <br> 416-274-1842
                     </p>
                 </div>
 
                 <div class="col-md-4 col-sm-6 col-xs-12 contactInfo1">
-                    <i class="icon-envelope"></i>
+                    <i class="fa fa-envelope"></i>
                     <p>ReachingTheHorizon@mail.com
                         <br>
                     </p>
@@ -592,8 +580,7 @@
 
 
             </div>
-
-            <img src="img/zigzagsep.png" class="img-responsive center-block zigzagSep" alt="separator">
+        <%= image_tag("zigzagsep.png",class: "img-responsive center-block zigzagSep") %>
             <br>
             <br>
             <!--content-->
@@ -644,10 +631,6 @@
         </div>
     </section>
 
-
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <!--/* END contact SECTION */-->
-    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
     <section id="googleMapWrapper">
