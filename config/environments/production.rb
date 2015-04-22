@@ -20,7 +20,7 @@ HorizonRails::Application.configure do
   # config.action_dispatch.rack_cache = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
- config.serve_static_assets = false
+  config.serve_static_assets = false
 
   # config.assets.precompile += %w( *.js )
   # config.assets.precompile += %w( index/*.css )
@@ -54,31 +54,32 @@ HorizonRails::Application.configure do
 
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
-  config.middleware.use Rack::Deflater
-  config.middleware.insert_before ActionDispatch::Static, Rack::Deflater
 
-  config.middleware.use HtmlCompressor::Rack,
-    compress_css: true,
-    compress_javascript: true,
-    css_compressor: Sass,
-    enabled: true,
-    javascript_compressor: uglifier,
-    preserve_line_breaks: false,
-    remove_comments: true,
-    remove_form_attributes: false,
-    remove_http_protocol: false,
-    remove_https_protocol: false,
-    remove_input_attributes: true,
-    remove_intertag_spaces: false,
-    remove_javascript_protocol: true,
-    remove_link_attributes: true,
-    remove_multi_spaces: true,
-    remove_quotes: true,
-    remove_script_attributes: true,
-    remove_style_attributes: true,
-    simple_boolean_attributes: true,
-    simple_doctype: false
-end
+
+  config.middleware.use HtmlCompressor::Rack,options = {
+    :enabled => true,
+    :remove_multi_spaces => true,
+    :remove_comments => true,
+    :remove_intertag_spaces => false,
+    :remove_quotes => false,
+    :compress_javascript => true,
+    :javascript_compressor => :yui,
+    :compress_css => true,
+    :css_compressor => :yui,
+    :simple_doctype => false,
+    :remove_script_attributes => false,
+    :remove_style_attributes => false,
+    :remove_link_attributes => false,
+    :remove_form_attributes => false,
+    :remove_input_attributes => false,
+    :remove_javascript_protocol => false,
+    :remove_http_protocol => false,
+    :remove_https_protocol => false,
+    :preserve_line_breaks => false,
+    :simple_boolean_attributes => false,
+    :compress_js_templates => false
+  }
+
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
