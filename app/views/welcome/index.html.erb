@@ -11,7 +11,7 @@
      <script type="text/javascript">
         $(function () {
             "use strict";
-            //
+
             //if mobile device, replace video background with background image (video background is restricted on mobile devices)
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 $.backstretch("<%= asset_path('pattern.jpg') %>");
@@ -27,6 +27,12 @@
                 })
             }
         });
+
+        $(document).ready(function(){
+$(function () {
+        $(".youtube").YouTubeModal({autoplay:1, width:640, height:480, useYouTubeTitle: false , hideTitleBar:true,showBorder:false,controls:0});
+    });
+        })
     </script>
 
  <% end %>
@@ -70,9 +76,10 @@
                     <h5 class="minimal"><small>Reaching the</small> Horizon</h5>
                     <p class="minimal">
                     </p>
-                    <a data-scroll href="index-minimal-video.html#aboutIntro" class="btn btn-default btn-white">
-                            More
-                        </a>
+                    
+<button class="youtube btn btn-default btn-white" rel="8EtnyKXacF0">Watch Our Latest Launch
+</button>
+
                 </div>
             </div>
         </div>
@@ -111,10 +118,13 @@
                 <div class="col-md-8" data-scroll-reveal="enter left move over 1s after 0.2s">
                     <h4 class="minimal"><small>The Experience</small></h4>
                     <div class="lineSeparator"></div>
-                    <p>Horizon helps facilitate an exceptional approach to celebrate the life of a loved one through a personal and majestic journey to the Stratosphere. A service that truly reflects the uniqueness of the life it honors by having your loved one cremated ashes dispersed in space.</p>
+                    <p>Horizon integrates current atmospheric balloon technology with adaptive tracking guidance and navigation to ensure a safe and secure flight to the stratosphere. Ashes are dispersed at the apex of the journey and lasts for approximately 1.5 – 2 hrs.
+
+
+</p>
                     <p>
 
-                        Prior to the launch a personalized memorial service will be held where friends and family can get together to celebrate their loved once life. Together they can watch the launch and journey of their loved ones final resting place live.
+                      Prior to the launch a personalized memorial service will be held where friends and family can get together to celebrate their loved one’s life. Together they can watch the launch and journey of their loved ones final resting place live. After a successful launch, Horizon provides a professionally produced DVD of the entire event to family and friends.
 
                     </p>
                 </div>
@@ -219,22 +229,22 @@
                         </nav>
                         <div class="content-wrap">
                             <section id="section-iconfall-1">
-                                <p class="minimal">
-                                    Decide on type of personalized service
+                                <p class="minimal processtext">
+                                    Consult with Horizon on memorial service decisions
                                 </p>
                             </section>
                             <section id="section-iconfall-2">
-                                <p class="minimal">
+                                <p class="minimal processtext">
                                     Provide Cremated Ash Sample
                                 </p>
                             </section>
                             <section id="section-iconfall-3">
-                                <p class="minimal">
+                                <p class="minimal processtext">
                                     Launch into the Stratosphere
                                 </p>
                             </section>
                             <section id="section-iconfall-4">
-                                <p class="minimal">
+                                <p class="minimal processtext">
                                     Follow the Journey Live
                                 </p>
                             </section>
@@ -312,7 +322,9 @@
                     <h5 class="minimal" data-scroll-reveal="enter right move 10px over 1s after 0.4s">Atmospheric Balloon <small>&</small> Structure </h5>
 
                     <p data-scroll-reveal="enter right move 10px over 1s after 0.6s">
-                        The payload is launched with a150 g Helium filled Aether balloon that’s lands with a glider parachute. The payload is kept insulated and protected from the temperature variations by using an insulating foam structure housing all electrical and mechanical components.
+                       The payload is launched with a150 g Helium filled Aether balloon that lands with a glider parachute. The payload is kept insulated and protected from the temperature variations by using an insulating foam structure housing all electrical and mechanical components. 
+
+
                     </p>
                 </div>
             </div>
@@ -327,7 +339,7 @@
                     <h5 class="minimal" data-scroll-reveal="enter left move 10px over 1s after 0.4s">Guidance <small>&</small> Navigation</h5>
 
                     <p data-scroll-reveal="enter left move 10px over 1s after 0.6s">
-                        The payload is launched with a150 g Helium filled Aether balloon that’s lands with a glider parachute. The payload is kept insulated and protected from the temperature variations by using an insulating foam structure housing all electrical and mechanical components.
+                        Guidance Navigation of the spacecraft is integrated into the overall system for maneuvering to produce ideal landing parameters. The system works by having two individual GPS receivers that feed into a Arduino with four servo motors each individually corresponding to 1 of the 4 parachute cords. Depending on the coordination of both receivers, the Arduino will calculate the crafts current orientation and direction vector. The Arduino receives a directional signal from the landing site from the receiving antenna and will activate 2 servo’s depending on directional need.
                     </p>
                 </div>
             </div>
@@ -414,7 +426,11 @@
                                 </h4>
 
                             <p class="memberParagraph" data-scroll-reveal="enter right move 10px over 1s after 0.6s">
-                                Leader, traveller and visionary working towards a Space Engineering Undergraduate Degree.
+                             Shenalie Fernando is a 4th year Space Engineering student at the Lassonde School of engineering at York University. She is also a proud graduate of summer entrepreneurship program at Technion-Israel Institute of Technology, one of the best global universities for engineering and technology. As an aspiring Space Engineer, and passionate entrepreneur. Shenalie aims to use the cutting edge technologies from the space industry to tackle real world challenges. She is passionate about building and implementing disruptive technology in the real world to impact our lives in a postive way. 
+
+
+
+                              It’s also one of the world’s top 10 entrepreneurial ecosystems surrounded by start-ups, high-tech firms and new ideas to solve big problems. 
 
                             </p>
 
@@ -469,7 +485,7 @@
                                 </h4>
 
                             <p class="memberParagraph" data-scroll-reveal="enter right move 10px over 1s after 0.6s">
-                                Leader, traveller and visionary working towards a Space Engineering Undergraduate Degree.
+                                Patrick Hazzard is a fourth year space-engineering student with the Lassonde School of Engineering at York University. Patrick has always held an admiration for space and it's related technologies close to heart from a young age. More recently, his love for business and the personal side of technology has flourished from his involvement in many facets on campus. Patrick intends to continue his education via entering a suiting masters degree in engineering, following a year of travel naturally.
 
                             </p>
 
@@ -573,7 +589,7 @@
 
                 <div class="col-md-4 col-sm-6 col-xs-12 contactInfo1">
                     <i class="fa fa-envelope"></i>
-                    <p>ReachingTheHorizon@mail.com
+                    <p>ReachingHorizon@gmail.com
                         <br>
                     </p>
                 </div>

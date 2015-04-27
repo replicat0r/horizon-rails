@@ -13,3 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require js/modernizr.custom.js
+//= require js/youtube.js
