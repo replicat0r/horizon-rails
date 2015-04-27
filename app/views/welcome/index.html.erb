@@ -30,7 +30,7 @@
 
         $(document).ready(function(){
 $(function () {
-        $(".youtube").YouTubeModal({autoplay:1, width:640, height:480, useYouTubeTitle: false , hideTitleBar:true,showBorder:false,controls:0});
+        $(".youtube").YouTubeModal({autoplay:1, width:720, height:480, useYouTubeTitle: false , hideTitleBar:true,showBorder:false,controls:1});
     });
         })
     </script>
@@ -77,7 +77,7 @@ $(function () {
                     <p class="minimal">
                     </p>
                     
-<button class="youtube btn btn-default btn-white" rel="8EtnyKXacF0">Watch Our Latest Launch
+<button class="youtube btn btn-default btn-white" rel="uLc7Z9sh0Ms">Watch Our Latest Launch
 </button>
 
                 </div>
@@ -296,13 +296,14 @@ $(function () {
                 <div class="valign">
                     <div class="serviceIcon-wrap serviceIcon-effect-1 serviceIcon-effect-1a" data-scroll-reveal="enter left move 10px over 1s after 0.2s">
                         <div class="serviceIcon">
-                           <i class="fa fa-wifi"></i>
+                        <i class="fa fa-map-marker"></i>
+
                         </div>
                     </div>
 
 
 
-                    <h5 class="minimal" data-scroll-reveal="enter left move 10px over 1s after 0.4s">Tracking <small>&</small> Communication  </h5>
+                    <h5 class="minimal" data-scroll-reveal="enter left move 10px over 1s after 0.4s">Tracking   </h5>
 
                     <p data-scroll-reveal="enter left move 10px over 1s after 0.6s">
                         The heart of the tracking subsystem is a device called the trackuino. It is an arduino shield that combines a low power radio transmitter with a GPS receiver. Once the GPS receiver obtains a location signal, packets of data are transmitted through a quarter wave plane antenna to receiving stations
@@ -312,21 +313,24 @@ $(function () {
             </div>
 
             <div class="serviceBox text-center">
-                <div class="valign">
+             <div class="valign">
                     <div class="serviceIcon-wrap serviceIcon-effect-1 serviceIcon-effect-1a" data-scroll-reveal="enter right move 10px over 1s after 0.2s">
                         <div class="serviceIcon">
-                            <i class="fa fa-rocket"></i>
+                           <i class="fa fa-wifi"></i>
+                            <!--here is used a font awesome icon instead of a icon image -->
                         </div>
                     </div>
 
-                    <h5 class="minimal" data-scroll-reveal="enter right move 10px over 1s after 0.4s">Atmospheric Balloon <small>&</small> Structure </h5>
+                    <h5 class="minimal" data-scroll-reveal="enter right move 10px over 1s after 0.4s">Communications </h5>
 
                     <p data-scroll-reveal="enter right move 10px over 1s after 0.6s">
-                       The payload is launched with a150 g Helium filled Aether balloon that lands with a glider parachute. The payload is kept insulated and protected from the temperature variations by using an insulating foam structure housing all electrical and mechanical components. 
+                        Once the GPS antenna locks in on its location the radio transmitter can transmit packets through our quarter wave ground plane antenna to waiting receiving stations. Once the gps data packets are decoded we can track our payload in real time during its flight through aprs.fi.
 
 
                     </p>
+
                 </div>
+               
             </div>
 
             <div class="serviceBox text-center">
@@ -345,21 +349,24 @@ $(function () {
             </div>
 
             <div class="serviceBox text-center">
-                <div class="valign">
+
+
+             <div class="valign">
                     <div class="serviceIcon-wrap serviceIcon-effect-1 serviceIcon-effect-1a" data-scroll-reveal="enter right move 10px over 1s after 0.2s">
                         <div class="serviceIcon">
-                            <i class="fa fa-lightbulb-o"></i>
-                            <!--here is used a font awesome icon instead of a icon image -->
+                            <i class="fa fa-rocket"></i>
                         </div>
                     </div>
 
-                    <h5 class="minimal" data-scroll-reveal="enter right move 10px over 1s after 0.4s">Proof of Concept</h5>
+                    <h5 class="minimal" data-scroll-reveal="enter right move 10px over 1s after 0.4s">Atmospheric Balloon <small>&</small> Structure </h5>
 
                     <p data-scroll-reveal="enter right move 10px over 1s after 0.6s">
-                        The payload is launched with a150 g Helium filled Aether balloon that’s lands with a glider parachute. The payload is kept insulated and protected from the temperature variations by using an insulating foam structure housing all electrical and mechanical components.
-                    </p>
+                       The payload is launched with a150 g Helium filled Aether balloon that lands with a glider parachute. The payload is kept insulated and protected from the temperature variations by using an insulating foam structure housing all electrical and mechanical components. 
 
+
+                    </p>
                 </div>
+               
             </div>
 
         </div>
